@@ -1,0 +1,14 @@
+{
+  "name": "testrack",
+  "version": "0.0.0",
+  "description": "selenium version 2.53.1, firefox 46.0.1, the command for runt the project is [node nightwatch.js --group nordstromrack]",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paola Pierola",
+  "license": "ISC",
+  "dependencies": {
+    "nightwatch": "^0.9.7"
+  }
+}

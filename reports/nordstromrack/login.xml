@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="login"
+    errors="1" failures="0" hostname="" id="" package="nordstromrack" skipped="0"
+    tests="1" time="0.02900" timestamp="Thu, 18 Aug 2016 21:12:44 GMT">
+  
+    <testcase name="login" time="0.02900" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Nordstromrack / Login / login]:
+
+  TypeError: this.click(...).setValue(...).setValue(...).click(...).executeAsync is not a function
+    at Object.loginCommands.signIn (D:\Projects Thirdparty\testrack\pages\nordstromrack\login.js:7:21)
+    at Object.module.exports.login (D:\Projects Thirdparty\testrack\tests\nordstromrack\login.js:5:26)
+    at Module.call (D:\Projects Thirdparty\testrack\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at D:\Projects Thirdparty\testrack\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (D:\Projects Thirdparty\testrack\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (D:\Projects Thirdparty\testrack\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (D:\Projects Thirdparty\testrack\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at D:\Projects Thirdparty\testrack\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (D:\Projects Thirdparty\testrack\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (D:\Projects Thirdparty\testrack\node_modules\nightwatch\node_modules\q\q.js:125:13)
+      </system-err>
+  
+  
+  </testsuite>
+</testsuites>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="3">
+
+  <testsuite name="login"
+    errors="0" failures="1" hostname="" id="" package="nordstromrack" skipped="1"
+    tests="3" time="151.6" timestamp="Fri, 19 Aug 2016 12:46:40 GMT">
+  
+    <testcase name="login" time="148.1" assertions="0">
+    </testcase>
+  
+    <testcase name="validate login successful" time="3.496" assertions="2">
+
+      <failure message="Testing if element &lt;a.secondary-nav__link&gt; contains text: &quot;Account&quot;.">    at Object.loginCommands.loginSuccessful (D:\Projects Thirdparty\testrack\pages\nordstromrack\login.js:11:28)
+    at Object.module.exports.validate login successful (D:\Projects Thirdparty\testrack\tests\nordstromrack\login.js:12:26)</failure>
+
+    
+    </testcase>
+  
+  
+    
+    <testcase
+      name="select category">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
