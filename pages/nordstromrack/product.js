@@ -2,14 +2,14 @@ var productCommands ={
     fillShipping:function(){
         return this.setValue('@firstName','Paola')
                             .setValue('@lastName','Pierola')
-                            .setValue('@address','Paola')
+                            .setValue('@address','Paolawest 54th street')
                             .setValue('@company','Pierola')
-                            .setValue('@city','Paola')
+                            .setValue('@city','New york')
                             .click('select[id=@state]')
-                            .waitForElementVisible('#ember1417>option', 1000)
-                            .click('option[value=AA]')
-                            .setValue('@zipCode','Paola')
-                            .setValue('@phoneNumber','5555555555')
+                            .waitForElementVisible('#ember2474>option', 1000)
+                            .click('option[value=NY]')
+                            .setValue('@zipCode','10019')
+                            .setValue('@phoneNumber','9179701398')
                             .setValue('@nickName','Paola');
     }
 };
@@ -48,32 +48,41 @@ module.exports = {
        shippingAndPayment:{
            selector: 'div.checkout-page__right>div.checkout-page__shipping-and-payment.checkout-page__large-text'
        },
+       cardNumber:{
+           selector: '#ember1405'
+       },
+       secureCode:{
+           selector: '#ember1485'
+       },
+       nickNameCard:{
+            selector: '#ember1486'
+       },
        firstName:{
-           selector: '#ember1407'
+           selector: '#ember2464'
        },
        lastName:{
-           selector:'#ember1409'
+           selector:'#ember2466'
        },
        address:{
-           selector:'#ember1411'
+           selector:'#ember2468'
        },
        company:{
-           selector: '#ember1412'
+           selector: '#ember2469'
        },
        city:{
-           selector: '#ember1416'
+           selector: '#ember2473'
        },
        state:{
-           selector: '#ember1417'
+           selector: '#ember2474'
        },
        zipCode:{
-           selector: '#ember1539'
+           selector: '#ember2596'
        },
        phoneNumber:{
-           selector: '#ember1542'
+           selector: '#ember2599'
        },
-       nickName:{
-           selector: '#ember1543'
+       buttonSave:{
+           selector: '#ember1659'
        }
 
    }     
