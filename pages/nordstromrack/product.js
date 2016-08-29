@@ -1,16 +1,26 @@
 var productCommands ={
     fillShipping:function(){
-        return this.setValue('@firstName','Paola')
+        return this.setValue('@cardNumber','12345678910')
+                            .click('@expirationDate')
+                            .waitForElementVisible('#ember1413>option',3000)
+                            .click('#ember1447')
+                            .click('@year')
+                            .waitForElementVisible('#ember1454>option',3000)
+                            .click('#ember1474')
+                            .setValue('@secureCode','444')
+                            .setValue('@nickNameCard','test123')
+                            .setValue('@firstName','Paola')
                             .setValue('@lastName','Pierola')
                             .setValue('@address','Paolawest 54th street')
                             .setValue('@company','Pierola')
                             .setValue('@city','New york')
-                            .click('select[id=@state]')
-                            .waitForElementVisible('#ember2474>option', 1000)
+                            .click('@state')
+                            .waitForElementVisible('#ember1519>option', 1000)
                             .click('option[value=NY]')
                             .setValue('@zipCode','10019')
                             .setValue('@phoneNumber','9179701398')
-                            .setValue('@nickName','Paola');
+                            .setValue('@nickNameCard','Paola')
+                            .click('@buttonSave');
     }
 };
 
@@ -51,6 +61,12 @@ module.exports = {
        cardNumber:{
            selector: '#ember1405'
        },
+       expirationDate:{
+           selector: '#ember1413'
+       },
+       year:{
+           selector: '#ember1454'
+       },
        secureCode:{
            selector: '#ember1485'
        },
@@ -58,28 +74,28 @@ module.exports = {
             selector: '#ember1486'
        },
        firstName:{
-           selector: '#ember2464'
+           selector: '#ember1509'
        },
        lastName:{
-           selector:'#ember2466'
+           selector:'#ember1511'
        },
        address:{
-           selector:'#ember2468'
+           selector:'#ember1513'
        },
        company:{
-           selector: '#ember2469'
+           selector: '#ember1514'
        },
        city:{
-           selector: '#ember2473'
+           selector: '#ember1518'
        },
        state:{
-           selector: '#ember2474'
+           selector: '#ember1519'
        },
        zipCode:{
-           selector: '#ember2596'
+           selector: '#ember1641'
        },
        phoneNumber:{
-           selector: '#ember2599'
+           selector: '#ember1644'
        },
        buttonSave:{
            selector: '#ember1659'
